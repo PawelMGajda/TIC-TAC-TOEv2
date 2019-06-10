@@ -104,7 +104,7 @@ AIMove T_AI::getBestMove(T_Board& board, char player, int t_depth) //MINIMAX
 				board.InsertSign(iLn, jCol, player);
 
 
-				if (player == aiPlayer) // If AI -> human //REKURENCJA
+				if (player == aiPlayer) // If AI -> human 
 				{
 					move.score = getBestMove(board, humanPlayer, t_depth - 1).score;
 				}
