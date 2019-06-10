@@ -152,7 +152,7 @@ void T_TicTacToe::StartGame()
     T_Board board(size, win_condition); // Create only space for board array(size of area, how many in a row)
     T_AI minimax;
 
-    minimax.setDepth(5-(1.4*size-win_condition)); 
+    minimax.setDepth(size==3?10:4);
 
     board.ClearBoardArray();
     board.ShowBoardStats();
